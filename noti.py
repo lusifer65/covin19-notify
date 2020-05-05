@@ -19,9 +19,10 @@ while(True):
         st+=tr.get_text()
     st=st[1:]
     ilist=st.split("\n\n")
-    state=['Uttar Pradesh','Delhi',] #add state 
+    state=['Uttar Pradesh','Delhi','Maharashtra'] #add state 
     for item in ilist[:33]:
         x=item.split('\n')
         if(x[1] in state):
             notification_sys("covin_19 cases in "+x[1],f"\n cases:{x[2]} Cured:{x[3]} dead:{x[4]}")
+        time.sleep(.05)
     time.sleep(120) #chage time in sec 
