@@ -6,7 +6,7 @@ def notification_sys(title,message):
     notification.notify(
                         title=title,  #title for notification
                         message=message, #message
-                        timeout=10#time out in sec
+                        timeout=3#time out in sec
                         )
 def data(url):
     r=requests.get(url)
