@@ -9,6 +9,7 @@ def notification_sys(title,message):
                         timeout=3#time out in sec
                         )
 def data(url):
+    print("his")
     r=requests.get(url)
     return r.text
 while(True):
